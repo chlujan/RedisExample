@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+    head
+        title="Short URL"
+
+    body
+        h1 Short URL
+
+        form(action="/", method="POST")
+            input(type="url", name="url")
+            input(type="submit", value="Submit")
+
+	h2 Convert back to Original URL
+
+        form(action="/", method="POST")
+            input(type="text", name="short")
+            input(type="submit", value="Submit")
